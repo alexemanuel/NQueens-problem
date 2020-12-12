@@ -22,6 +22,10 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
+    print(f"Search Algorithm: {args.search_algorithm}")
+    print(f"Number of queens on the board: {args.queens_number}")
+    print("-------------")
+
     if args.search_algorithm == "DFS":
         search_algorithm = DFS
     else:
@@ -32,6 +36,7 @@ if __name__ == '__main__':
 
     if n_queens.goal_test(queens_positions):
         print(f"One solution was found: {queens_positions}")
+        print("-------------")
         print_queens_board_positions(queens_positions)
 
     else:

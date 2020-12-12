@@ -22,6 +22,8 @@ def timer(func):
 def print_queens_board_positions(queens_positions):
     """Print queens positions on the board"""
 
+    print("Queens positions on the board:")
+
     for i in range(len(queens_positions)):
         print(f"{i + 1}° Queen: {board_columns[i]}{queens_positions[i] + 1}")
 
