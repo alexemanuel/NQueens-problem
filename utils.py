@@ -1,4 +1,5 @@
 import functools
+from string import ascii_lowercase as board_columns
 import time
 
 
@@ -17,5 +18,16 @@ def timer(func):
 
     return wrapper
 
+
+def print_queens_board_positions(queens_positions):
+    """Print queens positions on the board"""
+
+    for i in range(len(queens_positions)):
+        print(f"{i + 1}° Queen: {board_columns[i]}{queens_positions[i] + 1}")
+
+
+#TODO
+def build_board(queens_positions):
+    """Print the chess board with all queens"""
 
 
