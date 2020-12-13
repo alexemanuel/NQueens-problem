@@ -4,7 +4,7 @@ from utils import timer
 @timer
 def breadth_first_search(n_queens):
     """ BFS (breadth_first_search) implementation.
-        n_queens = number of queens in a chess board
+        n_queens = instance of NQueens class
         returns: a list of states, each index in list is equivalent to a column
                 and its value is equivalent to the row. ex: states[2]=4 means 
                 that there is a queen at position (col=2, row=4). OBS: It is 0-indexed
@@ -30,7 +30,7 @@ def breadth_first_search(n_queens):
 @timer
 def depth_first_search(n_queens):
     """ DFS (depth_first_search) implementation.
-        n_queens = number of queens in a chess board
+        n_queens = instance of NQueens class 
         returns: a list of states, each index in list is equivalent to a column
                 and its value is equivalent to the row. ex: states[2]=4 means 
                 that there is a queen at position (col=2, row=4). OBS: It is 0-indexed

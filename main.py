@@ -1,6 +1,6 @@
 import argparse 
 
-from Nqueens import NQueens
+from NQueens import NQueens
 from search_algorithms import breadth_first_search as BFS
 from search_algorithms import depth_first_search as DFS
 from utils import print_queens_board_positions
